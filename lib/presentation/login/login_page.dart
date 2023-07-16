@@ -3,6 +3,7 @@ import 'package:flutter_auth_bloc/data/model/login.dart';
 import 'package:flutter_auth_bloc/presentation/login/bloc/login_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:lottie/lottie.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -59,6 +60,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              Lottie.asset('assets/hello.json'),
               TextField(
                 controller: emailController,
                 decoration: InputDecoration(
